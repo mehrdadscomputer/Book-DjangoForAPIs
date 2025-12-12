@@ -45,4 +45,21 @@ pip freeze > requirements.txt
 pip install black
 # to get Git version
 git --version
+# create a new Django project
+django-admin startproject django_project .
+# sync the database with Django’s default settings
+python manage.py migrate
+# start up the local Django web server
+python manage.py runserver
+# stop the local server
+Ctrl + c
+# create a Django app
+python manage.py startapp books
+# make migration file and then migrate the changes to the database
+python manage.py makemigrations NAMEOFTHEAPP
+python manage.py migrate
+# create a superuser in Django
+python manage.py createsuperuser
+# run the tests
+python manage.py test
 ```
