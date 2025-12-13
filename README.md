@@ -62,4 +62,10 @@ python manage.py migrate
 python manage.py createsuperuser
 # run the tests
 python manage.py test
+# to serve static files
+python -m pip install whitenoise
+# production webserver
+python -m pip install gunicorn
+# to make a new project on Rahti
+oc new-project djangoapitest  --description="csc_project: 2007342"
 ```
